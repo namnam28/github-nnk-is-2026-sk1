@@ -22,7 +22,7 @@ while (again.ToLower() == "a")
     int aaa;
     while (!int.TryParse(Console.ReadLine(), out aaa))
     {
-        Console.Write("Nezdali jste celé číslo. Zadejte číslo znovu: ");        
+        Console.Write("Nezdali jste celé číslo. Zadejte číslo znovuu: ");        
     }
 
 
