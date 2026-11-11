@@ -3,3 +3,13 @@ C:\aaa\github-nnk-is-2026-sk1\IS-Programy\program004a-obdelnik\obj\Debug\net9.0\
 C:\aaa\github-nnk-is-2026-sk1\IS-Programy\program004a-obdelnik\obj\Debug\net9.0\program004a-obdelnik.AssemblyInfo.cs
 C:\aaa\github-nnk-is-2026-sk1\IS-Programy\program004a-obdelnik\obj\Debug\net9.0\program004a-obdelnik.csproj.CoreCompileInputs.cache
 C:\aaa\github-nnk-is-2026-sk1\IS-Programy\program004a-obdelnik\obj\Debug\net9.0\program004a-obdelnik.sourcelink.json
+C:\aaa\github-nnk-is-2026-sk1\IS-Programy\program004a-obdelnik\bin\Debug\net9.0\program004a-obdelnik.exe
+C:\aaa\github-nnk-is-2026-sk1\IS-Programy\program004a-obdelnik\bin\Debug\net9.0\program004a-obdelnik.deps.json
+C:\aaa\github-nnk-is-2026-sk1\IS-Programy\program004a-obdelnik\bin\Debug\net9.0\program004a-obdelnik.runtimeconfig.json
+C:\aaa\github-nnk-is-2026-sk1\IS-Programy\program004a-obdelnik\bin\Debug\net9.0\program004a-obdelnik.dll
+C:\aaa\github-nnk-is-2026-sk1\IS-Programy\program004a-obdelnik\bin\Debug\net9.0\program004a-obdelnik.pdb
+C:\aaa\github-nnk-is-2026-sk1\IS-Programy\program004a-obdelnik\obj\Debug\net9.0\program004a-obdelnik.dll
+C:\aaa\github-nnk-is-2026-sk1\IS-Programy\program004a-obdelnik\obj\Debug\net9.0\refint\program004a-obdelnik.dll
+C:\aaa\github-nnk-is-2026-sk1\IS-Programy\program004a-obdelnik\obj\Debug\net9.0\program004a-obdelnik.pdb
+C:\aaa\github-nnk-is-2026-sk1\IS-Programy\program004a-obdelnik\obj\Debug\net9.0\program004a-obdelnik.genruntimeconfig.cache
+C:\aaa\github-nnk-is-2026-sk1\IS-Programy\program004a-obdelnik\obj\Debug\net9.0\ref\program004a-obdelnik.dll

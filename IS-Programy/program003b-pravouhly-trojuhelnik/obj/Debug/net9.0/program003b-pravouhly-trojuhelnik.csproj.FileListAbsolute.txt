@@ -1,0 +1,5 @@
+C:\aaa\github-nnk-is-2026-sk1\IS-Programy\program003b-pravouhly-trojuhelnik\obj\Debug\net9.0\program003b-pravouhly-trojuhelnik.GeneratedMSBuildEditorConfig.editorconfig
+C:\aaa\github-nnk-is-2026-sk1\IS-Programy\program003b-pravouhly-trojuhelnik\obj\Debug\net9.0\program003b-pravouhly-trojuhelnik.AssemblyInfoInputs.cache
+C:\aaa\github-nnk-is-2026-sk1\IS-Programy\program003b-pravouhly-trojuhelnik\obj\Debug\net9.0\program003b-pravouhly-trojuhelnik.AssemblyInfo.cs
+C:\aaa\github-nnk-is-2026-sk1\IS-Programy\program003b-pravouhly-trojuhelnik\obj\Debug\net9.0\program003b-pravouhly-trojuhelnik.csproj.CoreCompileInputs.cache
+C:\aaa\github-nnk-is-2026-sk1\IS-Programy\program003b-pravouhly-trojuhelnik\obj\Debug\net9.0\program003b-pravouhly-trojuhelnik.sourcelink.json

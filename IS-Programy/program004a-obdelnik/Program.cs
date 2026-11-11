@@ -17,7 +17,7 @@ while (again.ToLower() == "a")
     int width;
     while (!int.TryParse(Console.ReadLine(), out width) || width <= 0)
     {
-        Console.ForeGroundColor = ConsoleColor.Red;
+        Console.ForegroundColor = ConsoleColor.Red;
         Console.Write("Nezadali jste kladné celé číslo. Zadejte šířku znovu: ");
         Console.ResetColor();
     }
@@ -27,7 +27,7 @@ while (again.ToLower() == "a")
     int height;
     while (!int.TryParse(Console.ReadLine(), out height) || height <= 0)
     {
-        Console.ForeGroundColor = ConsoleColor.Red;
+        Console.ForegroundColor = ConsoleColor.Red;
         Console.Write("Nezadali jste kladné celé číslo. Zadejte výšku znovu: ");
         Console.ResetColor();
     }
@@ -36,14 +36,23 @@ while (again.ToLower() == "a")
     // Vnější cyklus, který nám bude hlídat počet řádků (shora dolů)
     for(int i = 1; i <= height; i++)
     {   
+        if (i % 2 == 0){
+            Console.ForegroundColor = ConsoleColor.DarkMagenta;
+        }
+        else
+        {
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+        }
+        
         // Vnitřní cyklus, který se nám postará o ot, aby se v každém řádku vykreslil správně
-        for(int j = 1; intj <= width; j++)
+        for(int j = 1; j <= width; j++)
         {
             Console.Write("* ");
+            System.Threading.Thread.Sleep(System.TimeSpan.FromMilliseconds(100)); // zpoždění
         }
+        Console.ResetColor();
         Console.WriteLine();
     }   
-
 
     Console.WriteLine();
     Console.WriteLine("===========================");
