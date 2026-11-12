@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "4OFGFiDG+xA=",
+  "dgSpecHash": "rfphOBnyqyk=",
   "success": true,
-  "projectFilePath": "C:\\aaa\\github-nnk-is-2026-sk1\\IS-Programy\\program003b-pravouhly-trojuhelnik\\program003b-pravouhly-trojuhelnik.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\programming\\IS-2026\\github-nnk-is-2026-sk1\\IS-Programy\\program003b-pravouhly-trojuhelnik\\program003b-pravouhly-trojuhelnik.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.netcore.app.ref\\9.0.13\\microsoft.netcore.app.ref.9.0.13.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\9.0.13\\microsoft.windowsdesktop.app.ref.9.0.13.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\9.0.13\\microsoft.aspnetcore.app.ref.9.0.13.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\9.0.13\\microsoft.netcore.app.host.win-x64.9.0.13.nupkg.sha512"
+  ],
   "logs": []
 }

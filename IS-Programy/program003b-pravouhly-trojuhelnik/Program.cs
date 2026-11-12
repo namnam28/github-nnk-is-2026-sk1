@@ -25,7 +25,7 @@ while (again.ToLower() == "a")
 
     // Jádro problému
     // Vnější cyklus, který nám bude hlídat počet řádků (shora dolů)
-    for(int i = i <= height; i++)
+    for(int i = 1; i <= height; i++)
     {
         for (int j = 1; j < i; j++)
         {
@@ -36,7 +36,7 @@ while (again.ToLower() == "a")
 
     Console.WriteLine();
     Console.WriteLine("===========================");
-    Console.WriteLine($"Zadaná šířka: {width}; Zadaná výška: {height}");
+    Console.WriteLine($"Zadaná výška: {height}");
     Console.WriteLine("===========================");
     Console.WriteLine();
 
