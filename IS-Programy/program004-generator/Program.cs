@@ -3,63 +3,57 @@
 while (again.ToLower() == "a")
 {
     Console.Clear();
-    Console.WriteLine("***********************"); 
-    Console.WriteLine("******Generátor náhodných čísel******"); 
-    Console.WriteLine("***********************"); 
-    Console.WriteLine("*****Ngo Nam Khánh*****"); 
+    Console.WriteLine("*******************************************"); 
+    Console.WriteLine("******Generátor pseudonáhodných čísel******"); 
+    Console.WriteLine("*******************************************"); 
+    Console.WriteLine("****************Ngo Nam Khánh**************"); 
     Console.WriteLine();
     Console.WriteLine();
 
-    Console.Write("Zadejte počet generovaných čísel (celé číslo): ");
-    int n; 
-    while(!int.TryParse(Console.ReadLine(), out n)) {
-        Console.Write("Nezadali jste celé číslo. Zadejte počet generovaných číslo znovu: ");
+    Console.Write("Zadejte počet generovaných čísel (přirozené číslo): ");
+    int n;
+    while (!int.TryParse(Console.ReadLine(), out n) || n <= 0)
+    {
+        Console.Write("Nezadali jste přirozené číslo. Zadejte číslo znovu: ");
     }
 
-    Console.Write("Zadejte dolní mez (celé číslo): ");
-    int dm;
-    while(!int.TryParse(Console.ReadLine(), out dm)) {
-        Console.Write("Nezadali jste celé číslo. Zadejte dolní mez znovu: ");
+    Console.Write("Zadejte dolní mez (přirozené číslo): ");
+    int lowerBound;
+    while (!int.TryParse(Console.ReadLine(), out lowerBound))
+    {
+        Console.Write("Nezadali jste přirozené číslo. Zadejte dolní mez znovu: ");
     }
 
-    Console.Write("Zadejte horní (celé číslo): ");
-    int hm;
-    while(!int.TryParse(Console.ReadLine(), out hm)) {
-        Console.Write("Nezadali jste celé číslo. Zadejte horní mez znovu: ");
+    Console.Write("Zadejte horní mez (celé číslo nebo rovno hodnotě dolní meze): ");
+    int upperBound;
+    while (!int.TryParse(Console.ReadLine(), out upperBound) || upperBound <= lowerBound)
+    {
+        Console.Write("Nezadali jste přirozené číslo. Zadejte horní mez znovu: ");
     }
 
     Console.WriteLine();
-    Console.WriteLine("============================================");
-    Console.WriteLine("Zadané hodnoty: ");
-    Console.WriteLine($"Počet čísel: {n}; dolní mez: {dm}; horní mez: {hm}");
-    Console.WriteLine("============================================");
+    Console.WriteLine("======================================");
+    Console.WriteLine($"Počet čísel: {n}; Dolní mez: {lowerBound}; Horní mez: {upperBound}");
+    Console.WriteLine("======================================");
+    Console.WriteLine();
     Console.WriteLine();
 
+    // Deklarace a alokace pole v paměti
+    int[] myRandNumbs = new int[n];
+
+    // inicializace generátoru
+    Random myRandNumb = new Random();
+    // Random myRandNumb = new Random(50);
+
+    // Generování náhodných čísel
+    Console.WriteLine("Vygenerovaná psedonáhodná čísla: ");
+    for (int i = 0; i < myRandNumbs.Length; i++)
+    {
+        myRandNumbs[i] = myRandNumb.Next(lowerBound, upperBound);
+        Console.Write($"{myRandNumbs[i]}; ");  
+    }
 
 
-
-
-        // deklarace pole
-        int[] myArray = new int[n];
-
-        Random randomNumber = new Random();
-
-        int kladna = 0;
-        int zaporna = 0;
-        int nuly = 0;
-
-        Console.WriteLine("\n\nNáhodná čísla:");
-        for(int i=0; i<n; i++) {
-            myArray[i] = randomNumber.Next(dm, hm+1);
-            Console.Write("{0}; ", myArray[i]);
-
-            if(myArray[i]>0)
-                kladna++;
-            else if(myArray[i]<0)
-                zaporna++;
-            else
-                nuly++;
-        }
 
     // Dotaz směrem k uživateli na opakování
     Console.WriteLine();
