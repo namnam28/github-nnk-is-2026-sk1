@@ -4,7 +4,7 @@ while (again.ToLower() == "a")
 {
     Console.Clear();
     Console.WriteLine("*******************************************"); 
-    Console.WriteLine("******Generátor pseudonáhodných čísel******"); 
+    Console.WriteLine("*******Generátor - max, min, hodiny********"); 
     Console.WriteLine("*******************************************"); 
     Console.WriteLine("****************Ngo Nam Khánh**************"); 
     Console.WriteLine();
@@ -53,6 +53,34 @@ while (again.ToLower() == "a")
         Console.Write($"{myRandNumbs[i]}; ");  
     }
 
+    // Hledání maxima, minima a jejich prvních pozic
+    int max = myRandNumbs[0];
+    int min = myRandNumbs[0];
+    int posMax = 0; // pozice prvního maxima
+    int posMin = 0; // pozice prvního minima
+
+    for (int i = 1; i < n; i++)
+    {
+        // Zjišťujeme zda i-tý prvek není menší než aktuální hodnota maxima
+        if (myRandNumbs[i] > max)
+        {
+            max = myRandNumbs[i];
+            posMax = i;
+        }
+
+        // Zjišťujeme zda i-tý prvek není menší než aktuální hodnota minima
+        if (myRandNumbs[i] < min)
+        {
+            min = myRandNumbs[i];
+            posMin = i;
+        }
+    }
+
+    Console.WriteLine();
+    Console.WriteLine("======================================");
+    Console.WriteLine($"Maximum: {max}");
+    Console.WriteLine($"Minimum: {min}");
+    Console.WriteLine("======================================");
 
 
     // Dotaz směrem k uživateli na opakování
