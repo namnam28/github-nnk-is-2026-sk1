@@ -79,12 +79,58 @@ while (again.ToLower() == "a")
     Console.WriteLine();
     Console.WriteLine("======================================");
     Console.WriteLine($"Maximum: {max}");
+    Console.WriteLine($"Pozice prvního maxima: {posMax}");
     Console.WriteLine($"Minimum: {min}");
+    Console.WriteLine($"Pozice prvního minima: {posMin}");
     Console.WriteLine("======================================");
 
 
+    // Vykreslení přesýpacích hodin
+    if (max >= 3)
+    {
+        // Vnější cyklus řídí vykreslování jednotlivých řádků
+        for (int i = 0; i < max; i++)
+        {
+            int spaces = 0; // proměnná pro počet úvodních mezer v aktuálním řádku
+            int stars = 0; // proměnná pro počet hvězdiček v aktuálním řádku
+
+            if (i < max / 2)
+            {
+                // horní polovina obrazce
+                spaces = i;
+                stars = max - (2 * i);
+
+
+            }
+            else
+            {
+                // dolní polovina
+                // TO-DO: studenti samostatně
+            }
+
+            // Samostatné vykreslení aktuálního řádku
+            // Nejprve vykreslujeme mezery
+            for (int sp = 0; sp < spaces; sp++)
+            {
+                Console.Write(" ");
+            }
+
+            // Následně vykreslujeme hvězdičky
+            for (int st = 0; st < stars; st++)
+            {
+                Console.Write("*");
+            }
+
+        }
+    }
+    else
+    {
+        Console.WriteLine("Maximum je menší než 3 => obrazec se nevykreslí!");
+    }
+
+
     // Dotaz směrem k uživateli na opakování
-    Console.WriteLine();
+        Console.WriteLine();
     Console.Write("Pro opakování programu stiskněte klávesu a. Následně potvrďte klávesou Enter: ");
     again = Console.ReadLine() ?? "";
 }
