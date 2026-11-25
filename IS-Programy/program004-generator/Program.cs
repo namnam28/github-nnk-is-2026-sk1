@@ -49,6 +49,8 @@ while (again.ToLower() == "a")
     int positiveNumbs = 0;
     int negativeNumbs = 0;
     int zeros = 0;
+    int evenNumbs = 0;
+    int oddNumbs = 0;
 
 
     // Generování náhodných čísel
@@ -73,6 +75,13 @@ while (again.ToLower() == "a")
             positiveNumbs++;
         else
             zeros++;
+
+        // sudá nebo lichá
+        if(myRandNumbs[i] % 2 ==0)
+            evenNumbs++;
+        else
+            oddNumbs++;
+
     }
 
     Console.WriteLine();
@@ -80,6 +89,9 @@ while (again.ToLower() == "a")
     Console.WriteLine($"Počet záporných čísel: {negativeNumbs}");
     Console.WriteLine($"Počet kladných čísel: {positiveNumbs}");
     Console.WriteLine($"Počet nul: {zeros}");
+    Console.WriteLine($"=====================================");
+    Console.WriteLine($"Počet sudých čísel: {evenNumbs}");
+    Console.WriteLine($"Počet lichých čísel: {oddNumbs}");
     Console.WriteLine("======================================");
 
     // Dotaz směrem k uživateli na opakování
